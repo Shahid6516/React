@@ -1,10 +1,10 @@
-import React from 'react'
-import RenderingListAndConditionalOperator from './Questions/RenderingListAndConditionalOperator'
-
+import RenderingListAndConditionalOperator from './Concepts/RenderingListAndConditionalOperator.jsx'
+import ConditionalOperator from './Concepts/ConditionalOperator.jsx'
 const App = () => {
   return (
     <>
-<RenderingListAndConditionalOperator/>
+      {/* <RenderingListAndConditionalOperator /> */}
+      <ConditionalOperator/>
     </>
   )
 }
