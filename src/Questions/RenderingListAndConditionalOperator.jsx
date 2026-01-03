@@ -14,13 +14,45 @@ const RenderingListAndConditionalOperator = () => {
 
 
   return (
-  <div>
-    {products.map((product)=>(
-      <h1>
-        Name: {product.name} - Price: {product.price} - category: {product.category}
-      </h1>
-    ))}
-  </div>
+    <div >
+      <div className='Question 1'>
+        <ul className='Rendring'>
+          <h4 className='text-2xl mb-5'>Question 1: How to render these list using map ?</h4>
+          {products.map((product) => (
+            <li key={product.id}>
+              <strong> Name: {product.name}</strong> - Price: ${product.price} - category: {product.category}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <hr />
+
+      <div className='Question 2'>
+        <h2 className='mt-5 text-2xl'>Question 2: How can you filter products with a specific category ?</h2>
+
+        <ul className='Filter'>
+          {products.filter((product) => product.category == "Electronics").map((product) => (
+            <li key={product.id}>{product.category} - {product.name} - {product.price} </li>
+          ))}
+        </ul>
+      </div>
+
+      <hr />
+
+      <div className='Question 3'>
+        <h2 className='text-2xl mt-5'>Question 3: How can you render a summary of total prices for products</h2>
+        <ul>
+          <p>Total Price Summary: {products.reduce}</p>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+
+
   )
 }
 
