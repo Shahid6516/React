@@ -44,18 +44,30 @@ const RenderingListAndConditionalOperator = () => {
         <h2 className='text-2xl mt-5'>Question 3: How can you render a summary of total prices for products</h2>
         <ul>
           <p>Total Price Summary: {" "}
-            {/* {products.reduce((acc, product) => {
-             return acc + product.price
-            }, 0)} */}
-
-          {products.reduce((acc, product)=>{
-            return
-          },)}
+            {products.reduce((acc, product) => {
+              return acc + product.price
+            }, 0)}
           </p>
 
         </ul>
       </div>
+      <hr />
 
+      <div className="Question 4 mt-5">
+        <h2>Question 4: Add discountedPrice key with 10% discount to all the products with price more than 20$ and render it.</h2>
+
+        <ul>
+          {products.filter((product) => product.price > 20).map((product) => {
+            return {
+              ...product,
+              discountedPrice: product.price - product.price * (10 / 100)
+            }
+          }).map((product) => (
+            <li key={product.id}>Product name: {product.name} {product.discountedPrice} - discounted from: {product.price} </li>
+          ))}
+        </ul>
+
+      </div>
 
     </div>
 
