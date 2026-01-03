@@ -44,9 +44,13 @@ const RenderingListAndConditionalOperator = () => {
         <h2 className='text-2xl mt-5'>Question 3: How can you render a summary of total prices for products</h2>
         <ul>
           <p>Total Price Summary: {" "}
-            {products.reduce((acc, product) => {
+            {/* {products.reduce((acc, product) => {
              return acc + product.price
-            }, 0)}
+            }, 0)} */}
+
+          {products.reduce((acc, product)=>{
+            return
+          },)}
           </p>
 
         </ul>
