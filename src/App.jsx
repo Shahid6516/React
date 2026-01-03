@@ -1,8 +1,11 @@
 import React from 'react'
+import RenderingListAndConditionalOperator from './Questions/RenderingListAndConditionalOperator'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+<RenderingListAndConditionalOperator/>
+    </>
   )
 }
 
