@@ -11,6 +11,7 @@ const RenderingListAndConditionalOperator = () => {
     { id: 6, name: "Product F", price: 40, category: "Food" },
   ];
 
+  const names = ["Alice", "Bob", "Alice", "Charlie", "Bob"];
 
 
   return (
@@ -53,8 +54,8 @@ const RenderingListAndConditionalOperator = () => {
       </div>
       <hr />
 
-      <div className="Question 4 mt-5">
-        <h2>Question 4: Add discountedPrice key with 10% discount to all the products with price more than 20$ and render it.</h2>
+      <div className="Question 4 mt-5 ">
+        <h2 className='text-2xl'>Question 4: Add discountedPrice key with 10% discount to all the products with price more than 20$ and render it.</h2>
 
         <ul>
           {products.filter((product) => product.price > 20).map((product) => {
@@ -69,6 +70,22 @@ const RenderingListAndConditionalOperator = () => {
 
       </div>
 
+      <hr />
+
+      <div className='question 5 mt-5'>
+        <h2 className='Question 5 text-2xl'>
+          Question 5: How can you filter and render unique elements from an array using filter in react
+        </h2>
+
+        <ul className='mb-5'>
+          {names.filter((name, index) => {
+            return names.indexOf(name) === index;
+          }).map((name) => {
+            return <li>{name}</li>
+          })}
+        </ul>
+      </div>
+      <hr />
     </div>
 
 
