@@ -1,8 +1,12 @@
 import React from 'react'
 
 const State = () => {
+  const [count, setCount] = React.useState(0)
+
   return (
-    <div>State</div>
+    <div>
+      {count}
+    </div>
   )
 }
 
