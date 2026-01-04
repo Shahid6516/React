@@ -9,7 +9,7 @@ const App = () => {
       {/* <RenderingListAndConditionalOperator /> */}
       {/* <ConditionalOperator/> */}
       {/* <ClassicVsFunctionalReactComponent /> */}
-      <Counter/>
+      {/* <Counter/> */}
     </>
   )
 }
