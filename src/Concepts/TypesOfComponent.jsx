@@ -2,7 +2,7 @@ import React from 'react'
 
 const TypesOfComponent = () => {
   return (
-    <div>TypesOfComponent</div>
+    <div>There are mainly six type of component but we need to know only two now classbased component and functional component</div>
   )
 }
 
