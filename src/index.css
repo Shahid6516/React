@@ -2,8 +2,8 @@
 
 
 body {
-  background-color:black;
-  color:white;
+  /* background-color:black; */
+  /* color:white; */
 
 }
 h2 {
@@ -13,7 +13,7 @@ h2 {
 }
 h3 {
   font-size: 1.50rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: block;
 }
 h1{

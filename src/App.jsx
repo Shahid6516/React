@@ -1,21 +1,21 @@
-import RenderingListAndConditionalOperator from './Concepts/RenderingListAndConditionalOperator.jsx'
-// import ClassicVsFunctionalReactComponent from './Concepts/ClassicVsFunctionalReactComponent.jsx'
-import Counter from './Concepts/ClassicVsFunctionalReactComponent.jsx'
-import State from './Hooks/State.jsx'
-// import ConditionalOperator from './Concepts/ConditionalOperator.jsx'
-import UseEffecthook from './Hooks/useEffect-hook.jsx'
-import UseContextHook from './Hooks/UseContextHook.jsx'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Blog from "./Pages/Blog"
+import Nav from "./Pages/Nav"
+
 
 const App = () => {
   return (
     <>
-      {/* <RenderingListAndConditionalOperator /> */}
-      {/* <ConditionalOperator/> */}
-      {/* <ClassicVsFunctionalReactComponent /> */}
-      {/* <Counter/> */}
-      {/* <State/> */}
-      {/* <UseEffecthook/> */}
-      <UseContextHook/>
+      <BrowserRouter>
+<Nav/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
