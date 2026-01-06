@@ -4,6 +4,7 @@ import Counter from './Concepts/ClassicVsFunctionalReactComponent.jsx'
 import State from './Hooks/State.jsx'
 // import ConditionalOperator from './Concepts/ConditionalOperator.jsx'
 import UseEffecthook from './Hooks/useEffect-hook.jsx'
+import UseContextHook from './Hooks/UseContextHook.jsx'
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/* <ClassicVsFunctionalReactComponent /> */}
       {/* <Counter/> */}
       {/* <State/> */}
-      <UseEffecthook/>
+      {/* <UseEffecthook/> */}
+      <UseContextHook/>
     </>
   )
 }
