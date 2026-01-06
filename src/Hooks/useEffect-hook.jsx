@@ -15,9 +15,12 @@ const UseEffectHook = () => {
     ])
 
     const fetchUser = async () => {
-        const resoponce = await fetch("https://random-data-api.com/api/v2/users")
+        const resoponce = await fetch("https://api.freeapi.app/api/v1/public/randomusers/user/random")
         const data = await resoponce.json()
+        setUser(data)
         console.log(data)
+        // console.log(data[0].name)
+
     }
     useEffect(() => {
         fetchUser();
@@ -38,6 +41,7 @@ const UseEffectHook = () => {
                 - Handling dependencies ensures that the effect runs only when necessary and prevents unnecessary re-execution of the effect, optimizing performance and avoiding potential bug.
             </p>
             <h3>Question 3: Example of useEffect for data fetching.</h3>
+            <span>Name: {user?.data?.name?.first} {user?.data?.name?.last} </span>
         </div>
     )
 }
