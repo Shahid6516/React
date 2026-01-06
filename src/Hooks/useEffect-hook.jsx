@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UseEffectHook = () => {
+
+    const [user, setUser] = useState()
+
     useEffect(() => {
         // side effect code goes here
         return () => {
@@ -10,6 +13,15 @@ const UseEffectHook = () => {
     }, [
         // dependencies
     ])
+
+    const fetchUser = async () => {
+        const resoponce = await fetch("https://random-data-api.com/api/v2/users")
+        const data = await resoponce.json()
+        console.log(data)
+    }
+    useEffect(() => {
+        fetchUser();
+    }, [])
 
     return (
         <div>
@@ -25,7 +37,7 @@ const UseEffectHook = () => {
 
                 - Handling dependencies ensures that the effect runs only when necessary and prevents unnecessary re-execution of the effect, optimizing performance and avoiding potential bug.
             </p>
-            <h3>Question 3: </h3>
+            <h3>Question 3: Example of useEffect for data fetching.</h3>
         </div>
     )
 }
