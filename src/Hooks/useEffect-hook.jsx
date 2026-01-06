@@ -42,6 +42,14 @@ const UseEffectHook = () => {
             </p>
             <h3>Question 3: Example of useEffect for data fetching.</h3>
             <span>Name: {user?.data?.name?.first} {user?.data?.name?.last} </span>
+
+            {/* <h3>Question 4: Convert major lifecycle methods to useEffect and explain.</h3> */}
+
+            <h3>Question 3: How to perform cleanup using useEffect? Explain with example.</h3>
+            <p>- You can return a cleanup function inside useEffect, which runs before the effect re-runs or when the component unmounts.
+            - this is useful for cleaning up subscriptions, or event listeners to prevent memory leaks.
+
+            </p>
         </div>
     )
 }
