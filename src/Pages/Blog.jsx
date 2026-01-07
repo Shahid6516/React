@@ -3,7 +3,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <div className='p-10'>
-      <h1 className='text-red-600'>📝 Blog Page</h1>
+      <h1 >📝 Blog Page</h1>
       <h3 className='text-3xl'>
         Our Blog
         Welcome to our blog, where we share insights, ideas, and updates from the world of technology, design, and digital growth.

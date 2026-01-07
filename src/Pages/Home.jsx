@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='p-10'>
       {/* <Nav/> */}
-      <h1 className='text-blue-700'>🏠 Home Page</h1>
+      <h1>🏠 Home Page</h1>
       <h3 className='text-3xl tracking-lighter mt-4'>Hero Section
         Welcome to our digital space where ideas turn into reality. We help individuals and businesses build meaningful online experiences through smart design and powerful technology.
 

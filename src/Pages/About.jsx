@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className='p-10'>
 
-            <h1 className='text-yellow-800'>👤 About Page</h1>
+            <h1 >👤 About Page</h1>
             <h3 className='text-3xl'>
                 We are a passionate team of creators, developers, and problem-solvers who love building things for the web. Our mission is to create digital solutions that are simple, effective, and impactful.
 <br />
